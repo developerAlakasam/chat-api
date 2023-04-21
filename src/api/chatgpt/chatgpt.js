@@ -20,6 +20,6 @@ export const chatPrompt = async (req, res) => {
       return res.status(201).json({ respuesta });
     })
     .catch(function (error) {
-      return res.status(201).json({ error });
+      return res.status(404).json({ error });
     });
 };
